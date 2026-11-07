@@ -223,12 +223,145 @@ public class Main{
 //        }
 
         // Q21
+//        Scanner sc = new Scanner(System.in);
+//        int num = sc.nextInt();
+//        for (int i = 1; i<=num; i++){
+//            if (i%4==0){
+//                continue;
+//            }
+//            System.out.println(i);
+//        }
+
+        // Q22
+//        Scanner sc = new Scanner(System.in);
+//        int N = sc.nextInt();
+//        boolean isFound = false;
+//        for(int i = 1; i <= N; i++){
+//            if ((i%3==0)&&(i%7==0)){
+//                System.out.println(i);
+//                isFound = true;
+//                break;
+//            }
+//        }
+//        if (!isFound){
+//            System.out.println("-1");
+//        }
+
+        // Q23
+//        Scanner sc = new Scanner(System.in);
+//        int N = sc.nextInt();
+//        int a = 0;
+//        int b = 1;
+//        int next;
+//        for (int i = 0; i<N; i++) {
+//            if (i == 0) {
+//                System.out.println(0);
+//            } else if (i == 1) {
+//                System.out.println(1);
+//            } else {
+//                next = a + b;
+//                a = b;
+//                b = next;
+//                System.out.println(next);
+//            }
+
+        // Q24
+//        Scanner sc = new Scanner(System.in);
+//        boolean isPositive = true;
+//        do {
+//            int num = sc.nextInt();
+//            if (num>=0){
+//                System.out.println(num);
+//            } else {
+//                isPositive = false;
+//            }
+//        } while(isPositive);
+
+        // Q25
+//        Scanner sc = new Scanner(System.in);
+//        int digits = sc.nextInt();
+//        int count = 0;
+//        while(digits!=0){
+//            digits = digits / 10;
+//            count = count + 1;
+//        }
+//        System.out.println(count);
+
+        // Q26
+//        Scanner sc = new Scanner(System.in);
+//        int num = sc.nextInt();
+//        int lastNum;
+//        while (num!=0){
+//            lastNum = num % 10;
+//            num = num / 10;
+//            System.out.print(lastNum);
+//        }
+
+        // Q27
+//        Scanner sc = new Scanner(System.in);
+//        int year = sc.nextInt();
+//        if ((year%4==0)&&(year%100!=0) || year%400==0){
+//            System.out.println("LEAP");
+//        } else {
+//            System.out.println("NOT LEAP");
+//        }
+
+        // Q28
+//        Scanner sc = new Scanner(System.in);
+//        int N = sc.nextInt();
+//        for (int i =1; i<=N; i++){
+//            System.out.println("Line "+i+": Hello");
+//        }
+
+        // Q29
+//        Scanner sc = new Scanner(System.in);
+//        int firstNum = sc.nextInt();
+//        int secondNum = sc.nextInt();
+//        int Greatest = 0;
+//        int sum = firstNum + secondNum;
+//        for(int i = 1; i<= sum; i++){
+//            if ((firstNum%i==0)&&(secondNum%i==0)){
+//                Greatest = i;
+//            }
+//        }
+//        System.out.println(Greatest);
+
+        // Q30
+//        Scanner sc = new Scanner(System.in);
+//        int N = sc.nextInt();
+//        int sum = 0;
+//        for (int i = 1; i<=N; i++){
+//            int num = sc.nextInt();
+//            sum = sum + num;
+//        }
+//        System.out.println(sum);
+
+        // Q31
+//        Scanner sc = new Scanner(System.in);
+//        int num = sc.nextInt();
+//        boolean isNotPrime = false;
+//        for(int i = 1; i<=num; i++){
+//            if ((i != 1)&&(i != num)){
+//                if(num%i==0){
+//                    isNotPrime = true;
+//                }
+//            }
+//        }
+//        if (num == 1){
+//            isNotPrime = true;
+//        }
+//        if (!isNotPrime){
+//            System.out.println("PRIME");
+//        } else {
+//            System.out.println("NOT PRIME");
+//        }
+
+        // Q32
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        for (int i = 1; i<=num; i++){
-            if (i%4==0){
-                System.out.println(i);
-                continue;
+        int N = sc.nextInt();
+        for(int i = 1; i<=N; i++) {
+            if (N%i==0){
+                if ((i == 1)&&(N == i))
             }
         }
     }
