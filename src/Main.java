@@ -357,12 +357,55 @@ public class Main{
 //        }
 
         // Q32
+
+
+        // Q36
+//        Scanner sc = new Scanner(System.in);
+//        int N = sc.nextInt();
+//        for(int i = 1; i<=N; i++){
+//            for(int j=1; j<=10; j++){
+//                System.out.println(i+"*"+j+"="+(i*j));
+//            }
+//            System.out.println();
+//        }
+
+        // Q37
+//        Scanner sc = new Scanner(System.in);
+//        int N = sc.nextInt();
+//        while(true){
+//            System.out.println(N);
+//            if (N == 1){
+//                break;
+//            }
+//            if (N%2==0){
+//                N = N / 2;
+//            } else {
+//                N = N * 3 + 1;
+//            }
+//        }
+
+        // Q39
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        for(int i = 1; i<=N; i++) {
-            if (N%i==0){
-                if ((i == 1)&&(N == i))
+        int countPositive = 0;
+        int countNegative = 0;
+        int sumPositive = 0;
+        int sumNegative = 0;
+        int num;
+        for (int i = 0; i<N; i++){
+            num = sc.nextInt();
+            if (num>0){
+                countPositive = countPositive + 1;
+                sumPositive = sumPositive + num;
+            } else if (num<0) {
+                countNegative = countNegative + 1;
+                sumNegative = sumNegative + num;
             }
         }
+        System.out.println(countPositive);
+        System.out.println(countNegative);
+        System.out.println(sumPositive);
+        System.out.println(sumNegative);
+
     }
 }
